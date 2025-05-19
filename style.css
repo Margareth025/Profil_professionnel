@@ -1,0 +1,305 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf7;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #dad2d8;
+  padding: 2rem 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+nav a {
+  display: block;
+  margin: 1rem 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-icon {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #1f1f2e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#menu-toggle:checked + .menu-icon + header {
+  transform: translateX(0);
+}
+
+main {
+  padding: 2rem;
+  margin-right: 270px;
+}
+.Marga2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem auto;
+  display: block;
+}
+
+.banner {
+  background-color: #1f1f2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.banner h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+.banner h2{
+  color:  #ffffff;
+}
+.banner p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+main {
+  padding: 2rem;
+  margin-right: 270px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  padding: 2rem;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background:  #dad2d8;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.button-container {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.button-container button {
+  padding: 1rem 2rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #1f6391;
+}
+/* Style global */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f7;
+  color: #333;
+}
+
+/* Menu latéral responsive */
+.menu-icon {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  color: #004aad;
+}
+
+#cv {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 4px solid #004aad;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    background-color: #004aad;
+    padding: 1rem;
+  }
+
+  #menu-toggle:checked + .menu-icon + header nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 999;
+  }
+
+  .content, #cv {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 200px;
+  }
+  main {
+    margin: 0;
+    padding-top: 5rem;
+  }
+  .intro {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.intro .texte {
+  max-width: 600px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  input, textarea {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  input, textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
+
+
+}
